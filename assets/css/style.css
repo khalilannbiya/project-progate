@@ -818,6 +818,15 @@ footer {
     justify-content: center;
   }
 
+  .shopping {
+    padding-left: 2vw;
+  }
+
+  .card-item p, .card-item h2 {
+    padding-left: 2vw;
+  }
+
+
   /* footer */
   .footer-bottom {
     height: 18vw;
