@@ -17,7 +17,7 @@
    </head>
    <body>
       <!-- ======================= Navbar ======================= -->
-      <header class="">
+      <header>
          <nav>
             <div class="logo">
                <a href="#">
@@ -26,15 +26,15 @@
             </div>
             <ul class="nav-links">
                <li>
-                  <a href="#">Produk</a>
+                  <a href="#produk">Produk</a>
                </li>
                <li>
-                  <a href="#about">Berita</a>
+                  <a href="#berita">Berita</a>
                </li>
                <li>
-                  <a href="#bestseller">Lokasi Kami</a>
+                  <a href="#location">Lokasi Kami</a>
                </li>
-               <li>
+               <li class="list-none">
                   <a href="#contact" class="btn-nav">Contact</a>
                </li>
             </ul>
@@ -53,11 +53,11 @@
       <!-- Main -->
       <main>
          <section class="section-slogan">
-            <h1>Impossible Is Nothing</h1>
+            <h1></h1>
          </section>
 
          <!-- Section Best Seller -->
-         <section class="best-seller">
+         <section class="best-seller" id="produk">
             <h1 class="title-section">Best Seller</h1>
             <div class="flex-card">
                <div class="card-item">
@@ -117,7 +117,7 @@
          </section>
 
          <!-- Section News -->
-         <section class="section-news">
+         <section class="section-news" id="berita">
             <h1 class="title-section">Berita Terbaru</h1>
             <div class="flex-card">
                <div class="card-item">
@@ -157,7 +157,7 @@
          </section>
 
          <!-- Section Lokasi Toko -->
-         <section class="section-location">
+         <section class="section-location" id="location">
             <h1 class="title-section">Lokasi Toko</h1>
             <div class="flex-card">
                <div class="card-item">
@@ -181,7 +181,42 @@
             </div>
          </section>
       </main>
-
+      <footer id="contact">
+         <div class="footer-content">
+            <h3>GROUP 42 INC.</h3>
+            <p>
+               Temukan peralatan & kebutuhan olahraga, sepatu, tas, jaket, celana, kaos & baju renang. Jual fashion sports Adidas original hanya di Mapclub.com. Pay & Pick. Branded & Original. Transaksi Aman Bergaransi. Tanpa Ribet. Types:
+               Sneakers, Backpack, Tshirt, Sandals.
+            </p>
+            <ul class="socials">
+               <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+               </li>
+               <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+               </li>
+               <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+               </li>
+               <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-bottom">
+            <p>copyright © <a href="#">GROUP 42</a></p>
+            <div class="footer-menu">
+               <ul class="f-menu">
+                  <li><a href="">Produk</a></li>
+                  <li><a href="">Sport</a></li>
+                  <li><a href="">Koleksi</a></li>
+                  <li><a href="">Fitur</a></li>
+                  <li><a href="">Legal</a></li>
+                  <li><a href="">Support</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
       <script src="assets/js/app.js"></script>
    </body>
 </html>

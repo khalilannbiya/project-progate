@@ -12,7 +12,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   color: #282936;
 }
 
@@ -47,7 +47,6 @@ nav .logo {
 
 .logo a img {
   width: 4.5vw;
-  margin-right: 1vw;
 }
 
 .logo a h4 {
@@ -70,29 +69,33 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00;
+  color: #6071f5;
   transition: 0.3s;
 }
 
 .nav-btn a {
   text-decoration: none;
   color: #282936;
-  background-color: #ffcc00;
+  background-color: #6071f5;
   padding: 0.7vw 2.5vw;
   border-radius: 5vw;
   font-weight: 600;
-  border: 1px solid #ffcc00;
+  border: 1px solid #6071f5;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-btn a:hover {
   background-color: #fdfdfd;
-  color: #ffcc00;
+  color: #6071f5;
 
-  border: 1px solid #ffcc00;
+  border: 1px solid #6071f5;
 }
 
 nav ul li .btn-nav {
+  display: none;
+}
+
+.list-none {
   display: none;
 }
 
@@ -157,14 +160,68 @@ nav ul li .btn-nav {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 5vw;
+  padding: 0 10vw;
 }
 
 .section-slogan h1 {
-  font-size: 5vw;
-  margin-top: 6vw;
+  font-size: 4vw;
   color: #282936;
+  text-align: center;
 }
+
+.section-slogan h1::after {
+  content: "Impossible Is Nothing";
+  animation: change 15s infinite;
+}
+
+@keyframes change {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    content: "Impossible Is Nothing";
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+
+  }
+
+  40% {
+    opacity: 1;
+    content: "To Be The Best Sports Brand In The World";
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+
+  }
+
+  70% {
+    opacity: 1;
+    content: "Through Sport We Have The Power To Change Lives";
+
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 
 /* Section Best Seller */
 .best-seller {
@@ -248,7 +305,7 @@ nav ul li .btn-nav {
 
 .fancy {
   background-color: transparent;
-  border: 2px solid #000;
+  border: 2px solid #282936;
   border-radius: 0;
   box-sizing: border-box;
   color: #fff;
@@ -273,7 +330,7 @@ nav ul li .btn-nav {
   content: " ";
   width: 1.5625rem;
   height: 2px;
-  background: black;
+  background: #282936;
   top: 50%;
   left: 1.5em;
   position: absolute;
@@ -291,7 +348,7 @@ nav ul li .btn-nav {
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #282936;
 }
 
 .fancy .top-key {
@@ -326,7 +383,7 @@ nav ul li .btn-nav {
 
 .fancy:hover {
   color: white;
-  background: black;
+  background: #282936;
 }
 
 .fancy:hover::before {
@@ -384,7 +441,7 @@ nav ul li .btn-nav {
 
 .hover-underline-animation {
   position: relative;
-  color: black;
+  color: #282936;
   padding-bottom: 20px;
 }
 
@@ -396,7 +453,7 @@ nav ul li .btn-nav {
   height: 1.5px;
   bottom: 0;
   left: 0;
-  background-color: #000000;
+  background-color: #282936;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -422,6 +479,121 @@ nav ul li .btn-nav {
 
 .section-location .card-item p {
   margin-bottom: 3vw;
+}
+
+/* Footer */
+footer {
+  position: bottom;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #282936;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: #fdfdfd;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100vw;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+}
+
+.footer-menu ul {
+  display: flex;
+}
+
+.footer-menu ul li {
+  padding-right: 10px;
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #27bcda;
 }
 
 
@@ -474,6 +646,10 @@ nav ul li .btn-nav {
     left: -11px;
   }
 
+  .list-none {
+    display: block;
+  }
+
   nav ul li .btn-nav {
     display: block;
     text-decoration: none;
@@ -497,8 +673,7 @@ nav ul li .btn-nav {
   }
 
   .logo a img {
-    width: 7vw;
-    margin-right: 2vw;
+    width: 9vw;
   }
 
   /* Slogan */
@@ -560,6 +735,9 @@ nav ul li .btn-nav {
     display: flex;
     justify-content: center;
   }
+
+  /* footer */
+
 }
 
 @media screen and (max-width: 576px) {
@@ -568,7 +746,7 @@ nav ul li .btn-nav {
   }
 
   .logo a img {
-    width: 9vw;
+    width: 11vw;
   }
 
   .logo a h4 {
@@ -638,5 +816,10 @@ nav ul li .btn-nav {
     margin-bottom: 10vw;
     display: flex;
     justify-content: center;
+  }
+
+  /* footer */
+  .footer-bottom {
+    height: 18vw;
   }
 }
