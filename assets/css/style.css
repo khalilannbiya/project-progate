@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 .nav-btn a {
   text-decoration: none;
-  color: #282936;
+  color: #fdfdfd;
   background-color: #6071f5;
   padding: 0.7vw 2.5vw;
   border-radius: 5vw;
@@ -653,19 +653,19 @@ footer {
   nav ul li .btn-nav {
     display: block;
     text-decoration: none;
-    color: #27251f;
-    background-color: #ffcc00;
+    color: #fdfdfd;
+    background-color: #6071f5;
     padding: 2vw 10vw;
     border-radius: 5vw;
     font-weight: 600;
-    border: 1px solid #ffcc00;
+    border: 1px solid #6071f5;
   }
 
   nav ul li .btn-nav:hover {
     background-color: #fdfdfd;
-    color: #ffcc00;
+    color: #6071f5;
     transition: all 0.3s ease-in-out;
-    border: 1px solid #ffcc00;
+    border: 1px solid #6071f5;
   }
 
   nav .nav-btn {
